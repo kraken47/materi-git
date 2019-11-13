@@ -5,7 +5,7 @@ const app = express()
 app.use(express.urlencoded({ extended: true }))
 
 app.get('/', (req, res) => res.send('halo gais'))
-
+app.get('/home', (req, res) => res.send('ini tampilan home'))
 
 app.get('/', (req, res) => {
     var x, y, z
